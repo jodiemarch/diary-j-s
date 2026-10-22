@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diary Kita</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Halaman Login / Masukkan PIN (Username) -->
+  <div id="login-container" class="container">
+  <h2>Masuk ke Diary</h2>
+  <p>Masukkan PIN kamu:</p>
+  <div class="diary-form">
+    <input type="password" id="input-username" placeholder="Masukkan PIN..." maxlength="6">
+    <button id="btn-login">Masuk</button>
+  </div>
+  </div>
+
+  <!-- Halaman Utama Diary -->
+  <div id="app-container" class="container" style="display: none;">
+    <div class="header-user">
+      <h1>Diary Kita 📖</h1>
+      <button id="btn-logout" class="btn-secondary">Ganti User</button>
+    </div>
+
+    <!-- Form Input Diary (Tanpa Judul) -->
+    <div class="diary-form">
+      <p class="author-info">Menulis sebagai: <strong id="current-author">-</strong></p>
+      <textarea id="diary-content" rows="6" placeholder="Tulis cerita harimu di sini..."></textarea>
+      <button id="btn-submit">Simpan Diary</button>
+    </div>
+
+    <hr>
+
+    <!-- Daftar Diary -->
+    <h2>Catatan Sebelumnya</h2>
+    <div id="diary-list">
+      <!-- Data diary dimuat otomatis lewat JS -->
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

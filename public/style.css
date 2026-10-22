@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-info {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.diary-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.diary-form input, 
+.diary-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.diary-form textarea {
+  resize: vertical;
+}
+
+.diary-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.diary-form button:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  padding: 6px 12px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.diary-card {
+  background: #f9f9f9;
+  border-left: 4px solid #007bff;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.diary-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  color: #007bff;
+}
+
+.diary-card p {
+  margin: 0 0 8px 0;
+  white-space: pre-line;
+}
+
+.diary-card small {
+  color: #777;
+  font-size: 11px;
+}
